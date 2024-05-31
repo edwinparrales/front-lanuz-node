@@ -1,0 +1,29 @@
+<%- include layout/header.ejs%>
+<div class="container">
+    <h1><%= title %></h1>
+
+
+
+
+    <div class="row">
+        <%for(let i=0; i<lista.length;i++) {%>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%=lista[i].descripcion%></h5>
+                    <p class="card-text">Producto en oferta</p>
+                    <p class="card-text">$<%=lista[i].precio%></p>
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <%}%>
+
+
+    </div>
+
+
+</div>
+<%- include layout/footer.ejs%>
